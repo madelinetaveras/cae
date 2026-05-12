@@ -1,2 +1,3 @@
-# cae
-App para descubrir y planificar salidas en Santo Domingo.
+# QueHacerSD
+
+MVP en Streamlit para descubrir y guardar planes de ocio en Santo Domingo.
