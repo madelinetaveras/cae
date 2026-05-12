@@ -10,3 +10,15 @@ def save_plan(event_name, location, budget):
     }).execute()
 
     return True
+
+
+import pandas as pd
+
+def fetch_saved_plans():
+    supabase = get_connection()
+
+    response = supabase.table(
+        "saved_plans"
+    ).select("*").execute()
+
+    return pd.DataFrame(response.data)
